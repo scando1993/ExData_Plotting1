@@ -6,8 +6,10 @@ plot1 <- function(file){
   
   #Open a PNG device and creates plot1.png in working directory
   png(filename = "plot1.png",width = 480,height = 480)
+  
   #Creates the histogram 
   hist(as.numeric(dataSet$Global_active_power), col = "red", main = "Global active Power", xlab = "Global active Power (kilowatts)")
+  
   #Closes the device
   dev.off()
 }
